@@ -1,0 +1,5 @@
+Capital_inicial= float(input("Qual foi o dinheiro inicial que você colocou na poupança?\n"))
+taxa_juros= float(input("Qual foi a taxa de juros aplicada sobre o capital mensalmente?\n obs: coloque em decimal:\n"))
+tempo_aplicação = int(input("Coloque quantos meses seu capital ficou ou vai ficar na poupança: "))
+Montante= (Capital_inicial*(1+taxa_juros)**tempo_aplicação)
+print(f"Seu montante final depois de {tempo_aplicação} meses será de {Montante:.2f} R$")
