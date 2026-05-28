@@ -4,4 +4,7 @@ for i in range(5):
     if valor % 2 == 0:
         valores_pares = valores_pares+1
     i = i+1
-print(f"{valores_pares} valores pares")
+if valores_pares==1:
+    print(f"{valores_pares} valor par")
+else:
+    print(f"{valores_pares} valores pares")
