@@ -5,3 +5,4 @@ for i in range(5):
         valores_pares = valores_pares+1
     i = i+1
 print(f"{valores_pares} valores pares")
+print(i)
