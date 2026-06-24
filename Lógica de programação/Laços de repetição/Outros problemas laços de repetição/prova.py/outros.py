@@ -51,28 +51,3 @@ elif diaria_valor == precipitacao_esperada:
     print("Dentro do esperado")
 else:
     print("Abaixo do esperado")
-# Questão 5
-
-3 # código da solução
-saldo = 0.00
-while True:
-    print(f"Saldo atual: R$ {saldo:.2f}")
-    print("1 - Movimentar saldo\n2 - Encerrar carteira")
-    n = int(input())
-    if n ==1:
-        colocar = int(input())
-        if colocar>0.00:
-            print("[CRÉDITO] Operação realizada.")
-            saldo = colocar+saldo
-            print(f"Saldo atual: R$ {saldo:.2f}")
-            print("1 - Movimentar saldo\n2 - Encerrar carteira")
-        else:
-            print("[DÉBITO] Operação realizada.")
-            saldo = saldo+colocar
-            print(f"Saldo atual: R$ {saldo:.2f}")
-            print("1 - Movimentar saldo\n2 - Encerrar carteira")
-            if colocar>saldo:
-                print("[ERRO] Saldo insuficiente.")
-    else:
-        print(f"[ENCERRAMENTO] Saldo final: R${saldo}")
-        break
