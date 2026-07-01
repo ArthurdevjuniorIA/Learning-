@@ -12,5 +12,6 @@ livros = [
 
 ]
 for livro in livros:
-    if "estoque">0:
-        print(f"Livro disponível: {livro}")
+    if livro["estoque"] == 0:
+        continue
+    print(f"Livro disponível: {livro['nome']}")
