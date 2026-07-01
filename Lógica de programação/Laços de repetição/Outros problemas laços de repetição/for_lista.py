@@ -11,3 +11,6 @@ livros = [
     {"nome": "Orgulho e Preconceito", "estoque": 2}
 
 ]
+for livro in livros:
+    if "estoque">0:
+        print(f"Livro disponível: {livro}")
