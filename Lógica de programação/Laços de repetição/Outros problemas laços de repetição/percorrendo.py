@@ -22,4 +22,3 @@ for i in range(4,-1,-1):
     print(f"Venda realizada! Estoque restante: {i}")
     if i == 0:
         print("Estoque acabou")
-    else
