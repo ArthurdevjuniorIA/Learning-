@@ -1,0 +1,4 @@
+producoes = [ ]
+nomes = [ ]
+while True:
+    
