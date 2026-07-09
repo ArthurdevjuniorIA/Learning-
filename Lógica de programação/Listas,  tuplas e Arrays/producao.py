@@ -1,4 +1,0 @@
-producoes = [ ]
-nomes = [ ]
-while True:
-    
