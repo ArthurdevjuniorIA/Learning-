@@ -7,3 +7,8 @@ while True:
         atendimento_prioritario.append(idade)
     else:
         atendimento_normal.append(idade)
+    for prioritario in atendimento_prioritario:
+        print(atendimento_prioritario[0])
+        if atendimento_prioritario == [ ]:
+            for normal in atendimento_normal:
+                print(atendimento_normal[0])
