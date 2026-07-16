@@ -16,10 +16,15 @@ while True:
 
     elif opcao == 1:
         nome = input("Nome do atleta: ")
-        nome_atleta.append(nome)
-        retirou_toalha.append(nome)
-        print("Toalha entregue")
+        if nome not in retirou_toalha:
+             nome_atleta.append(nome)
+             retirou_toalha.append(nome)
+             print("Toalha entregue")
+        else:
+            print("Você já retirou uma toalha hoje!")
     elif opcao == 2:
         nome = input("Nome do atleta: ")
         devolveu_toalha.append(nome)
+        if nome in retirou_toalha:
+            retirou_toalha.remove(nome)
         print("Devolução registrada")
