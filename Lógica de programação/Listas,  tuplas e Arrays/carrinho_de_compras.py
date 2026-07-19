@@ -6,3 +6,4 @@ while True:
     else:
         carrinho.remove(produto)
         print(f"O {produto} já está no carrinho")
+        print("tudo feito")
