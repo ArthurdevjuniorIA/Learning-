@@ -10,7 +10,7 @@ while True:
         print(f"Total de peças montadas: {soma_producao}")
         print(f"Média de produção por funcionário: {media_producao:.0f}")
         break
-        for media in producao
+        
     producao = list(map(int,input("Produção (Seg Ter Qua Qui Sex): ").split()))
     if nome_do_funcionario not in nome_funcionario:
         nome_funcionario.append(nome_do_funcionario)
