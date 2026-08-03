@@ -4,11 +4,11 @@ dia = int(input())
 hora = int(input())
 minuto = int(input())
 segundo = int(input())
-segundo = segundo+1
 eh_bissexto = ano % 400 == 0 or ano % 4 == 0 and ano % 100 != 0
 if minuto>59 or minuto<0 or hora>23 or segundo>59 or segundo<0 or mes>12 or mes<1 or 0>ano:
     print("ERRO: Data ou hora inválida!")
 else:
+    segundo = segundo+1
     if eh_bissexto:
         if mes == 2 and dia>29 or dia<=0:
             print("ERRO: Data ou hora inválida!")
