@@ -10,3 +10,7 @@ def verificador_paridade():
     except:
         print("não vale!")
     return numero
+def other_funcao():
+    print("Estou iniciando")
+    try:
+        iniciar = input()
