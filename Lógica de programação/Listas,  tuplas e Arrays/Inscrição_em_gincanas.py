@@ -9,7 +9,8 @@ while True:
     tag_nome = list(map(input("Registro (TAG NOME ou FIM): ").split()))
     if tag_nome == "fim":
         print("===== RELATÓRIO FINAL =====")
-        print(f"-{*corrida}")
+        for correr in corrida:
+            print(f"-{correr}")
         break
     else:
         if tag_nome[0] not in tags:

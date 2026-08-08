@@ -12,17 +12,17 @@ while True:
         print("==============================\nRELATÓRIO GERAL DA SEMANA\n==============================")
         for some in producao_de_todos:
             soma_producao = some+soma_producao
-        media_producao = soma_producao/len(nome_do_funcionario)
+        media_producao = soma_producao/len(nome_funcionario)
         print(f"Total de peças montadas: {soma_producao}")
         print(f"Média de produção por funcionário: {media_producao:.0f}")
         print(f"Funcionário(s) com maior produção semanal: ")
         for mais in com_maiores_producao:
             print(f"-{mais}")
         for i in range(len(produzido_por_todos)):
-            for somando in produzido_por_todos[i]:
-                soma_da_producao_cada = somando+soma_da_producao_cada
-                if soma_da_producao_cada<media_producao:
-                    menor_que_media.append(nome_do_funcionario[i])
+            for somando in produzido_por_todos:
+                soma_da_producao_cada = sum(somando)
+            if media_producao>soma_da_producao_cada:
+                menor_que_media.append(nome_funcionario[i])
         print("Funcionário(s) abaixo da média semanal: ")
         for menor in menor_que_media:
             print(f"-{menor}")
@@ -34,10 +34,11 @@ while True:
         producao_de_todos.append(produto)
     if nome_do_funcionario not in nome_funcionario:
         nome_funcionario.append(nome_do_funcionario)
-        if sum(producao)>=maior_producao:
+        if sum(producao)>maior_producao:
            maior_producao = sum(producao)
+           com_maiores_producao.clear()
            com_maiores_producao.append(nome_do_funcionario)
-        
-
+        elif sum(producao) == maior_producao:
+            com_maiores_producao.append(nome_do_funcionario)
     else:
         nome_funcionario.remove(nome_funcionario)
